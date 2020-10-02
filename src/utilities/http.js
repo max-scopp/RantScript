@@ -1,9 +1,6 @@
 'use strict';
 
 const url = require('url');
-const fetch = require('node-fetch');
-
-var FormData = require('form-data');
 
 let compress = true;
 let debug = false;
@@ -59,7 +56,7 @@ function POST_FILE(uri, params, filepath) {
     if (typeof window === 'object') {
         throw new Error("Method not supported, yet.");
     }
-    const fs = require('fs');
+    const fs = null;
 
     var form = new FormData();
 
